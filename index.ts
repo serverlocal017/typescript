@@ -1,17 +1,6 @@
-function echo(title: string): string {
-    return title;
-}
-
-function echoYear(year: number): number {
-  return year;
-}
-
-function echoArg(arg: any): any {
+function echo<T>(arg: T): T {
   return arg;
 }
 
-echo('Subscribe');
-echoYear(20);
-
-echoArg('Hello');
-echoArg(2);
+echo<string>('HEllo');
+echo<number>(20); 
